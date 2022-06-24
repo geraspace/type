@@ -1,0 +1,249 @@
+
+::-webkit-input-placeholder {
+    text-align: center;
+    line-height:100px;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+  }
+
+.uploadText>input {
+  display: none;
+}
+
+#domEl {
+    padding: 20px 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 100,
+  'opsz' 48
+}
+
+/* Typewriter */
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+/* Handwriting */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+/* Sans */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/* Sans Serif */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+.darkmode{
+    background-color: #212121e8 !important;
+    color: white !important;
+    transition: background-color 0.8s;
+}
+
+:not(.darkmode){
+    transition: background-color 0.8s;
+}
+
+.darkmode_navbar{
+    background-color: #212121 !important;
+    color: white !important;
+    transition: background-color 0.5s !important;
+}
+
+.darkmode_icon{
+    color: white;
+}
+
+.darkmode_select{
+    background-color: #212121 !important;
+    border-radius: 5px;
+    color: white !important;
+    transition: background-color 0.5s !important;
+}
+
+:not(.darkmode_select){
+    transition: background-color 0.5s !important;
+}
+
+/* STYLES RESET */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol,
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* END STYLES RESET */
+
+/* BUTTON */
+.button{
+    background-color: transparent;
+    border:none;
+    opacity: 0.2;
+    font-size: 10px;
+    font-size: 12px;
+}
+
+.button:hover{
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.button:not(:hover){
+    opacity: 0.4;
+    transition: opacity 0.2s;
+}
+/* END BUTTON */
+
+/* NAVBAR */
+
+.main_navbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    min-height: 50px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    background: whitesmoke; /* fallback for old browsers */
+}
+
+.navbar_title{
+    font-family: Cutive Mono;
+    margin: 0 20px;
+    font-size: 1.5em;
+}
+
+.navbar_rights{
+    font-family: Cutive Mono;
+    margin: 0 20px;
+    font-size: 1em;
+    opacity: 0.5;
+}
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .05em solid gray; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3s steps(7, end),
+      blink-caret 1s step-end 6;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 5.5em }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: gray }
+  }
+
+/* END NAVBAR */
+
+/* TEXT AREA */
+
+.canvas_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 50px);
+    position: relative;
+}
+
+.canvas_textarea{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    background-attachment: local;
+    /* background-image:
+        linear-gradient(to right, white 5px, transparent 10px),
+        linear-gradient(to left, white 5px, transparent 10px),
+        repeating-linear-gradient(white, white 30px, #ccc 30px, white 31px, white 31px); */
+    line-height: 31px;
+    padding: 20px 20px;
+    font-family:Cutive Mono;
+    font-weight: 400;
+    height: calc(85vh - 50px);
+    width: 70vw;
+    font-size: 20px;
+    text-align: justify;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    position: relative;
+    top: -20px;
+}
+
+/* END TEXT AREA */
+
+/* SIDEBAR */
+
+.main_sidebar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    left: 10px;
+    gap: 10px;
+}
+
+/* END SIDEBAR */
+
+.main_darkmode{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.main_font{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    gap: 15px;
+}
+
+.select_font {
+    text-align: center;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 2px;
+}
