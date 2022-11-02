@@ -1,3 +1,6 @@
 # Type
+## Simple notes app. ##
 
-https://geraspace.github.io/type/
+**Website here: https://geraspace.github.io/type/**
+
+#### Tools: HTML, CSS and JavaScript/React.JS. ####
