@@ -1,3 +1,3 @@
 # Type
 
-Still updating...
+https://geraspace.github.io/type/
